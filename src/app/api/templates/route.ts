@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
-import { whatsappClient } from '@/lib/whatsapp-client';
+import { whatsappClient, WABA_ID } from '@/lib/whatsapp-client';
 
 export async function GET() {
   try {
-    const wabaId = process.env.WABA_ID;
+    const wabaId = WABA_ID;
 
     if (!wabaId) {
       return NextResponse.json(

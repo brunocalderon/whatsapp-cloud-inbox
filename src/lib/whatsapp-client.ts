@@ -25,3 +25,5 @@ export const whatsappClient = new Proxy({} as WhatsAppClient, {
 });
 
 export const PHONE_NUMBER_ID = process.env.PHONE_NUMBER_ID || '';
+
+export const WABA_ID = process.env.WABA_ID || '';
